@@ -1,5 +1,6 @@
-package com.satyam.tmdbinfo.domain.tvshows
+package com.satyam.tmdbinfo.domain.usecases.tvshows
 
+import com.satyam.tmdbinfo.domain.repository.TVShowsRepository
 import com.satyam.tmdbinfo.model.tvshowlist.TvShow
 
 class GetTvShowUseCase(private val tvshowRepository: TVShowsRepository) {

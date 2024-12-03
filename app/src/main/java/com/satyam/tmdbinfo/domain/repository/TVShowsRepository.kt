@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.domain.tvshows
+package com.satyam.tmdbinfo.domain.repository
 
 import com.satyam.tmdbinfo.model.tvshowlist.TvShow
 

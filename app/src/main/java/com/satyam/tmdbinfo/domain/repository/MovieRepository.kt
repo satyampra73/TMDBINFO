@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.domain.movies
+package com.satyam.tmdbinfo.domain.repository
 
 import com.satyam.tmdbinfo.model.movielist.Movie
 
