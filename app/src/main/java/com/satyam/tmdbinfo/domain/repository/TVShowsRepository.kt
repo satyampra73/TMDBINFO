@@ -1,6 +1,6 @@
 package com.satyam.tmdbinfo.domain.repository
 
-import com.satyam.tmdbinfo.model.tvshowlist.TvShow
+import com.satyam.tmdbinfo.data.model.tvshowlist.TvShow
 
 interface TVShowsRepository {
     suspend fun getTvShows(): List<TvShow>?

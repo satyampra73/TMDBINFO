@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.model.tvshowlist
+package com.satyam.tmdbinfo.data.model.tvshowlist
 
 
 import com.google.gson.annotations.SerializedName
@@ -7,7 +7,7 @@ data class TvShowList(
     @SerializedName("page")
     val page: Int?,
     @SerializedName("results")
-    val results: List<TvShow>?,
+    val tvShows: List<TvShow>,
     @SerializedName("total_pages")
     val totalPages: Int?,
     @SerializedName("total_results")

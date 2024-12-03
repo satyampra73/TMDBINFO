@@ -1,10 +1,10 @@
-package com.satyam.tmdbinfo.room
+package com.satyam.tmdbinfo.data.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.satyam.tmdbinfo.model.artist.Artist
-import com.satyam.tmdbinfo.model.movielist.Movie
-import com.satyam.tmdbinfo.model.tvshowlist.TvShow
+import com.satyam.tmdbinfo.data.model.artist.Artist
+import com.satyam.tmdbinfo.data.model.movielist.Movie
+import com.satyam.tmdbinfo.data.model.tvshowlist.TvShow
 
 @Database(
     entities = [Movie::class, TvShow::class, Artist::class],

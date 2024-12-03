@@ -1,15 +1,18 @@
-package com.satyam.tmdbinfo.data.repository
+package com.satyam.tmdbinfo.data.repository.movie
 
 import android.util.Log
 import com.satyam.tmdbinfo.data.model.movielist.Movie
 import com.satyam.tmdbinfo.data.model.movielist.MovieList
+import com.satyam.tmdbinfo.data.repository.movie.datasource.MovieLocalDataSource
+import com.satyam.tmdbinfo.data.repository.movie.datasource.MovieRemoteDataSource
+import com.satyam.tmdbinfo.data.repository.movie.datasource.MoviesCacheDataSource
 import com.satyam.tmdbinfo.domain.repository.MovieRepository
 import retrofit2.Response
 
 class MovieRepositoryImpl(
-    private val movieRemoteDataSource:MovieRemoteDataSource,
-    private val movieLocalDataSource:MovieLocalDataSource,
-    private val movieCacheDataSource:MoviesCacheDataSource
+    private val movieRemoteDataSource: MovieRemoteDataSource,
+    private val movieLocalDataSource: MovieLocalDataSource,
+    private val movieCacheDataSource: MoviesCacheDataSource
 ) : MovieRepository {
     override suspend fun getMovies(): List<Movie>? {
         return getMoviesFromCache()

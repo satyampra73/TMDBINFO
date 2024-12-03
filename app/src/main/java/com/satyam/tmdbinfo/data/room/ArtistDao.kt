@@ -1,11 +1,11 @@
-package com.satyam.tmdbinfo.room
+package com.satyam.tmdbinfo.data.room
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.satyam.tmdbinfo.model.artist.Artist
-import com.satyam.tmdbinfo.model.movielist.Movie
+import com.satyam.tmdbinfo.data.model.artist.Artist
+import com.satyam.tmdbinfo.data.model.movielist.Movie
 
 @Dao
 interface ArtistDao {

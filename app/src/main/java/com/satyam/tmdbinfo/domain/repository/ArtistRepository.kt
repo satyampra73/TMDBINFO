@@ -1,6 +1,6 @@
 package com.satyam.tmdbinfo.domain.repository
 
-import com.satyam.tmdbinfo.model.artist.Artist
+import com.satyam.tmdbinfo.data.model.artist.Artist
 
 interface ArtistRepository {
     suspend fun getArtist(): List<Artist>?

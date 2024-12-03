@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.model.artist
+package com.satyam.tmdbinfo.data.model.artist
 
 
 import androidx.room.Entity

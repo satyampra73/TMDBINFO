@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.data.repository.movie
+package com.satyam.tmdbinfo.data.repository.movie.datasource
 
 import com.satyam.tmdbinfo.data.model.movielist.MovieList
 import retrofit2.Response

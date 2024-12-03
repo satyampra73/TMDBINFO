@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.data.repository.movie
+package com.satyam.tmdbinfo.data.repository.movie.datasourceImpl
 
 import com.satyam.tmdbinfo.data.api.TMDBService
 import com.satyam.tmdbinfo.data.model.movielist.MovieList

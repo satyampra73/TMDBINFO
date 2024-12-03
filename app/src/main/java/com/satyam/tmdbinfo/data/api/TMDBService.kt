@@ -1,8 +1,8 @@
-package com.satyam.tmdbinfo.api
+package com.satyam.tmdbinfo.data.api
 
-import com.satyam.tmdbinfo.model.artist.ArtistList
-import com.satyam.tmdbinfo.model.movielist.MovieList
-import com.satyam.tmdbinfo.model.tvshowlist.TvShowList
+import com.satyam.tmdbinfo.data.model.artist.ArtistList
+import com.satyam.tmdbinfo.data.model.movielist.MovieList
+import com.satyam.tmdbinfo.data.model.tvshowlist.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 

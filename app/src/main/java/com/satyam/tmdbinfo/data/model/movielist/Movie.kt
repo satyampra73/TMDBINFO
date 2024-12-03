@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.model.movielist
+package com.satyam.tmdbinfo.data.model.movielist
 
 
 import androidx.room.Entity

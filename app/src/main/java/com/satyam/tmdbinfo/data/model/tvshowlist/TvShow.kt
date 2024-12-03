@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.model.tvshowlist
+package com.satyam.tmdbinfo.data.model.tvshowlist
 
 
 import androidx.room.Entity
