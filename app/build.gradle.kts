@@ -18,6 +18,12 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "API_KEY", "\"f60ae473c8d03fdd88e75848cea96a8e\"")
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas")
+            }
+        }
     }
 
     buildTypes {
@@ -53,7 +59,7 @@ dependencies {
     val retrofit_version = "2.11.0"
     val okHTTP_version = "4.12.0"
 
-    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
 
     // If this project uses any Kotlin source, use Kotlin Symbol Processing (KSP)
     // See Add the KSP plugin to your project
@@ -66,6 +72,7 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
     implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
     implementation("com.squareup.okhttp3:logging-interceptor:$okHTTP_version")
+    implementation("com.google.code.gson:gson:2.8.8")
     implementation(libs.github.glide)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
