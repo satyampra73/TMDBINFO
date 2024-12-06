@@ -18,7 +18,7 @@ ViewModel(){
         emit(tvShowList)
     }
 
-    fun updateTvShow() = liveData {
+    fun updateArtist() = liveData {
         val tvShowList = updateArtistUseCase.execute()
         emit(tvShowList)
     }
