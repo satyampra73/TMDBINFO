@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.presentation.di
+package com.satyam.tmdbinfo.presentation.di.core
 
 import android.content.Context
 import androidx.room.Room

@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.presentation.di
+package com.satyam.tmdbinfo.presentation.di.core
 
 import com.satyam.tmdbinfo.data.repository.artist.datasource.ArtistLocalDataSource
 import com.satyam.tmdbinfo.data.repository.artist.datasourceimpl.ArtistLocalDataSourceImpl
@@ -30,7 +30,7 @@ class LocalDataModule {
 
     @Provides
     @Singleton
-    fun provideMovieLocalDataSource(artistDao: ArtistDao): ArtistLocalDataSource {
+    fun provideArtistLocalDataSource(artistDao: ArtistDao): ArtistLocalDataSource {
         return ArtistLocalDataSourceImpl(artistDao)
     }
 

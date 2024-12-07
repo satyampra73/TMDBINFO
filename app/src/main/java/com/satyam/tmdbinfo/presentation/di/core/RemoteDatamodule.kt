@@ -1,4 +1,4 @@
-package com.satyam.tmdbinfo.presentation.di
+package com.satyam.tmdbinfo.presentation.di.core
 
 import com.satyam.tmdbinfo.data.api.TMDBService
 import com.satyam.tmdbinfo.data.repository.artist.datasourceimpl.ArtistRemoteDataSourceImpl

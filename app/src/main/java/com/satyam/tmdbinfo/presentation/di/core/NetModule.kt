@@ -1,6 +1,5 @@
-package com.satyam.tmdbinfo.presentation.di
+package com.satyam.tmdbinfo.presentation.di.core
 
-import androidx.room.util.createCancellationSignal
 import com.satyam.tmdbinfo.data.api.TMDBService
 import dagger.Module
 import dagger.Provides
