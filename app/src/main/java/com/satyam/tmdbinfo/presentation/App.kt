@@ -20,7 +20,7 @@ class App : Application(),Injector {
         super.onCreate()
         appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(applicationContext))
-            .netModule(NetModule(BuildConfig.BASE_URL))
+            .netModule(NetModule(BuildConfig.BASE_URL,"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZjRjYzUwOWEzNTlmM2E4MTczNmEzMTY1NmFlNWI1NyIsIm5iZiI6MTczMjcyNjI1MS42NjQsInN1YiI6IjY3NDc0ZGViZDdhMjA1NzE1YjYxNzcyNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lfJyEWec2iHpmluIJeXyhxzNMpo45xGZ5RIoxbhWIbc"))
             .remoteDatamodule(RemoteDatamodule())
             .build()
     }
