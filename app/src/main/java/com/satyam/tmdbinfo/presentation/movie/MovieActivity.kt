@@ -2,6 +2,8 @@ package com.satyam.tmdbinfo.presentation.movie
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -53,6 +55,36 @@ class MovieActivity : AppCompatActivity() {
                 Toast.makeText(this, "No Data Available", Toast.LENGTH_SHORT).show()
             }
             binding.progressBar.visibility = View.GONE
+        })
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.update, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_update -> {
+                updateMovies()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    fun updateMovies() {
+        binding.progressBar.visibility = View.VISIBLE
+        val response = movieViewModel.updateMovies()
+        response.observe(this, Observer {
+            if (it != null) {
+                adapter.setList(it)
+                adapter.notifyDataSetChanged()
+                binding.progressBar.visibility = View.GONE
+            } else {
+                binding.progressBar.visibility = View.GONE
+            }
         })
     }
 }
