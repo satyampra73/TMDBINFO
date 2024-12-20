@@ -81,17 +81,17 @@ class ArtistActivity : AppCompatActivity() {
     }
 
     fun updateArtist() {
-        binding.progressBar.visibility = View.VISIBLE
-        val response = artistViewModel.updateArtist()
-        response.observe(this, Observer {
-            if (it != null) {
-                adapter.setList(it)
-                adapter.notifyDataSetChanged()
-                binding.progressBar.visibility = View.GONE
-            } else {
-                binding.progressBar.visibility = View.GONE
-            }
-        })
-    }
+            binding.progressBar.visibility = View.VISIBLE
+            val response = artistViewModel.updateArtist()
+            response.observe(this, Observer {
+                if (it != null) {
+                    adapter.setList(it)
+                    adapter.notifyDataSetChanged()
+                    binding.progressBar.visibility = View.GONE
+                } else {
+                    binding.progressBar.visibility = View.GONE
+                }
+            })
+        }
 
 }
